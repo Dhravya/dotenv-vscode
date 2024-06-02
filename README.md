@@ -99,6 +99,24 @@ Multiple languages supported.
 
 <hr/>
 
+### Custom File Associations for dotenv Files
+
+To define custom file associations for `dotenv` files in `settings.json`, use the `dotenv.files.associations` setting. This allows you to associate custom file patterns with the `dotenv` language, enabling syntax highlighting, auto-cloaking, auto-completion, and in-code secret peeking for those files.
+
+For example, to associate all files in a `.env.d` directory as `dotenv` files, add the following to your `settings.json`:
+
+```json
+{
+  "dotenv.files.associations": {
+    "**/.env.d/*": "dotenv"
+  }
+}
+```
+
+This feature enhances flexibility in managing environment variables across different projects and setups.
+
+<hr/>
+
 ### dotenv-vault (included but optional)
 
 Manage your secrets using <strong>dotenv-vault</strong>'s all-in-one toolkit. Say goodbye to scattered secrets across multiple platforms and tools.

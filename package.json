@@ -29,7 +29,8 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "*",
+    "onLanguage:dotenv"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -60,6 +61,12 @@
           "type": "string",
           "default": "█",
           "description": "Change the icon of the cloak for your .env files"
+        },
+        "dotenv.files.associations": {
+          "scope": "resource",
+          "type": "object",
+          "default": {},
+          "description": "Custom file associations for dotenv files"
         }
       }
     },
